@@ -1,0 +1,5 @@
+﻿Plan Name,Semi-Monthly Premium,Deductible Individual,Outpatient Coinsurance,Office Visit Copay,Lab Copay,OOP Max Individual,Notes
+Silver PPO 2550/70,351.65,2550,0.45,70,65,8750,Basic coverage with lowest premiums
+Gold PPO 1000/30,427.87,1000,0.20,30,30,7900,Balanced mid-tier coverage
+Gold HDHP 1750/15%,423.61,1750,0.15,ded,ded,4000,HSA-eligible high deductible plan
+Platinum PPO 250/15,495.48,250,0.10,15,20,4300,Premium coverage with low deductible
