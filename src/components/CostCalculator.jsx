@@ -96,7 +96,7 @@ const CostCalculator = ({ plans }) => {
       ...plan,
       ...calculateCosts(plan, procedureAmount, routineVisits, labTests)
     }));
-  }, [plans, procedureAmount, routineVisits, labTests]);
+  }, [plans, procedureAmount, routineVisits, labTests, insuranceDiscount]);
 
   const comparisonData = planResults.map(plan => ({
     plan: plan.name.split(' ').slice(0, 2).join('\n'),
