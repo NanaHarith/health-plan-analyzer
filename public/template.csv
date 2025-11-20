@@ -1,0 +1,23 @@
+Plan Name,Semi-Monthly Premium,Deductible Individual,Outpatient Coinsurance,Office Visit Copay,Lab Copay,OOP Max Individual,Notes
+Silver PPO 2550/70,351.65,2550,0.45,70,65,8750,Basic coverage with lower premiums
+Gold PPO 1000/30,427.87,1000,0.20,30,30,7900,Balanced coverage
+Gold HDHP 1750/15%,423.61,1750,0.15,ded,ded,4000,HSA-eligible high deductible plan
+Platinum PPO 250/15,495.48,250,0.10,15,20,4300,Premium coverage with low out-of-pocket
+
+# INSTRUCTIONS FOR USE:
+# 1. Keep column headers exactly as shown (case-sensitive)
+# 2. Semi-Monthly Premium: Enter dollar amount (e.g., 351.65)
+# 3. Deductible Individual: Enter dollar amount (e.g., 2550)
+# 4. Outpatient Coinsurance: Enter as decimal (e.g., 0.45 for 45%, 0.20 for 20%)
+# 5. Office Visit Copay: Enter dollar amount OR "ded" if subject to deductible
+# 6. Lab Copay: Enter dollar amount OR "ded" if subject to deductible
+# 7. OOP Max Individual: Enter dollar amount (e.g., 8750)
+# 8. Notes: Optional description of the plan
+# 9. You can add up to 6 plans (rows 2-7)
+# 10. Delete example data and add your own plans
+# 11. Save as CSV and upload to the Health Plan Analyzer
+
+# EXAMPLE ENTRIES:
+# For fixed copays: 30, 50, 75
+# For percentage coinsurance: 0.10, 0.15, 0.20, 0.45
+# For deductible-based: ded (will apply deductible first, then coinsurance)
