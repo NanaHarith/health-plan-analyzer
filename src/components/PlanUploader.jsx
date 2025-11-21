@@ -66,7 +66,10 @@ const PlanUploader = ({ onPlansLoaded }) => {
   const handleFile = (file) => {
     if (!file) return;
     
-    if (!file.name.endsWith('.csv')) {
+    // Android Chrome often fails to report the correct MIME type for CSVs, 
+    // so we rely on the file extension check rather than file.type.
+    // We also allow the picker to select text/plain via the accept attribute below.
+    if (!file.name.toLowerCase().endsWith('.csv')) {
       setError('Please upload a CSV file');
       return;
     }
@@ -118,7 +121,9 @@ const PlanUploader = ({ onPlansLoaded }) => {
       >
         <input
           type="file"
-          accept=".csv"
+          // UPDATED: Extremely permissive accept string to force Android Chrome to enable the file.
+          // Includes standard CSV types, Excel types, text/plain, and the catch-all text/*
+          accept=".csv,text/csv,application/vnd.ms-excel,application/csv,text/x-csv,application/x-csv,text/comma-separated-values,text/x-comma-separated-values,text/plain,text/*"
           onChange={handleChange}
           className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
         />
